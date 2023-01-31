@@ -40,7 +40,7 @@ public class TC_login_001 {
 		driver.quit();
 	}
 
-	@Test
+	@Test(priority=1)
 	public void login1() throws InterruptedException {
 		Thread.sleep(10000);
 		String mytitle=driver.findElement(By.xpath("//*[@id=\"gridTitle\"]")).getText();
